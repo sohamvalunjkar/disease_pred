@@ -7,9 +7,9 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    page_icon="🧑‍⚕")
 
 # Load pre-trained models
-diabetes_model = pickle.load(open(r"D:\machine learning\ml projects\disease predication model\pickle file\db_dataset.sav", 'rb'))
-heart_disease_model = pickle.load(open(r"D:\machine learning\ml projects\disease predication model\pickle file\ht_dataset.sav", 'rb'))
-parkinsons_model = pickle.load(open(r"D:\machine learning\ml projects\disease predication model\pickle file\pk_dataset.sav", 'rb'))
+diabetes_model = pickle.load(open(r"pickle file\db_dataset.sav", 'rb'))
+heart_disease_model = pickle.load(open(r"pickle file\ht_dataset.sav", 'rb'))
+parkinsons_model = pickle.load(open(r"pickle file\pk_dataset.sav", 'rb'))
 
 # Sidebar for navigation
 selected = st.sidebar.selectbox('Select Prediction Type',
